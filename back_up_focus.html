@@ -1,0 +1,1604 @@
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- favicon.twig -->
+<link rel="apple-touch-icon" sizes="180x180" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/favicon-16x16.png">
+<link rel="manifest" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/site.webmanifest">
+<link rel="mask-icon" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="//libapps-eu.s3.amazonaws.com/apps/common/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- !favicon.twig -->
+<title>Première séance : recherche d'informations dans les bases de données - MEQS - Recherche d'information scientifique - Focus at Université de Rennes 1</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow,noarchive" /><!-- favicon.twig -->
+<link rel="apple-touch-icon" sizes="180x180" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/favicon-16x16.png">
+<link rel="manifest" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/site.webmanifest">
+<link rel="mask-icon" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="//libapps-eu.s3.amazonaws.com/apps/common/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="//libapps-eu.s3.amazonaws.com/apps/common/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- !favicon.twig -->
+<base href="https://focus.univ-rennes1.fr/MEQS_2022" /><!-- public_metadata.twig -->
+
+    <!-- auto generated dublin core metadata -->
+    <meta name="DC.Title" content="Focus: MEQS - Recherche d'information scientifique: Première séance : recherche d'informations dans les bases de données"/>
+    <meta name="DC.Creator" content="Mathilde Kergozien"/>
+    <meta name="DC.Subject" content=""/>
+    <meta name="DC.Description" content=""/>
+    <meta name="DC.Publishers" content="Université de Rennes 1"/>
+    <meta name="DC.Rights" content="Copyright Université de Rennes 1 2022"/>
+    <meta name="DC.Language" content="fr"/>
+    <meta name="DC.Identifier" content="https://focus.univ-rennes1.fr/c.php?g=704379&p=5071116"/>
+    <meta name="DC.Date.Created" content="Sep 9, 2022"/>
+    <meta name="DC.Date.Modified" content="Sep 13, 2022"/>
+    
+		<meta property="og:title" content="Focus: MEQS - Recherche d'information scientifique: Première séance : recherche d'informations dans les bases de données">
+		<meta property="og:description" content="Focus: MEQS - Recherche d'information scientifique: Première séance : recherche d'informations dans les bases de données">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://focus.univ-rennes1.fr/c.php?g=704379&p=5071116">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@springshare"><link rel="stylesheet" href="/web/jquery/css/jquery-ui.min.css?2695" /><link rel="stylesheet" href="/web/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" type="text/css" href="/web/slick-1.8.1/slick/slick.css"><link rel="stylesheet" type="text/css" href="/web/slick-1.8.1/slick/slick-theme.css"><link rel="stylesheet" href="/web/css2.18.5/lg-public.min.css" /><script type="text/javascript" src="/web/jquery/js/1.12.4_jquery.min.js"></script><!-- js_include_fallback.twig -->
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        jQuery.ui ||
+        document.write('<script src="/web/jquery/js/jquery-ui.min.js?2695">\x3C/script>');
+    </script>
+<!-- !js_include_fallback.twig --><script type="text/javascript" src="/web/js2.18.5/lg-public.min.js"></script><style>/** bootstrap_tab_css.twig **/
+#s-lg-tabs-container .nav-tabs > li > a,
+#s-lg-tabs-container .nav-tabs > li > button,
+#s-lg-tabs-container .nav-pills > li > a,
+#s-lg-tabs-container .nav-pills > li > button {
+    border: 1px solid transparent; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+    background-color: #efefef;
+    color: #000000;
+    font-weight: bold;
+    padding: 4px 15px;
+}
+
+#s-lg-tabs-container .nav-tabs {
+    border-bottom: 0;
+}
+
+#s-lg-tabs-container .nav-tabs > li#s-lg-admin-tab-add > a {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a:hover,
+#s-lg-tabs-container .nav-tabs > li > button:hover,
+#s-lg-tabs-container .nav-pills > li > a:hover,
+#s-lg-tabs-container .nav-pills > li > button:hover {
+    border: 1px solid transparent; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+    background-color: #d83312;
+    color: #ffffff;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a,
+#s-lg-tabs-container .nav-tabs > .active > button,
+#s-lg-tabs-container .nav-pills > .active > a,
+#s-lg-tabs-container .nav-pills > .active > button {
+    color: #ffffff;
+    cursor: default;
+    background-color: #d83312;
+    border: 1px solid transparent; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > a,
+#s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > button {
+    color: #ffffff;
+    cursor: default;
+    background-color: #d83312;
+    border-bottom-color: transparent;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a:hover,
+#s-lg-tabs-container .nav-pills > .active > a:hover,
+#s-lg-tabs-container .nav-tabs > .active > button:hover,
+#s-lg-tabs-container .nav-pills > .active > button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #d83312;
+    border: 1px solid transparent; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+
+#s-lg-tabs-container .nav .dropdown-toggle .caret {
+    border-top-color: #e1e1e1;
+}
+
+#s-lg-tabs-container .nav-tabs button.dropdown-toggle .caret {
+    margin-left: 2px;
+    margin-top: -3px;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-drop {
+    border-radius: 0 4px 4px 0;
+    padding: 4px 6px 4px 3px;
+    border-left: 1px solid transparent;
+}
+
+#s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-drop {
+    border-radius: 0 4px 4px 0;
+    padding: 4px 6px 0px 3px;
+    border-left: 1px solid transparent;
+    margin-right: 2px;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-drop:hover {
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #bbb;
+    padding: 4px 6px 4px 3px;
+}
+
+#s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-drop:hover {
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #bbb;
+    padding: 4px 6px 0px 3px;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-top-link,
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-top-link:hover,
+#s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-top-link,
+#s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-top-link:hover {
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 4px 5px 4px 10px;
+}
+
+.nav-tabs > li > a.s-lg-tab-top-link,
+.nav-tabs > li > button.s-lg-tab-top-link {
+    margin-right: 0px;
+}
+
+#s-lg-tabs-container .nav-pills > li > a.s-lg-tab-drop,
+#s-lg-tabs-container .nav-pills > li > button.s-lg-tab-drop {
+    border-radius: 0 4px 4px 0;
+    padding: 4px 8px 4px 8px;
+    border-left: 1px solid transparent;
+    position: absolute;
+    right: 0;
+}
+
+#s-lg-tabs-container .nav-pills > li > a.s-lg-tab-drop:hover,
+#s-lg-tabs-container .nav-pills > li > button.s-lg-tab-drop:hover {
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #bbb;
+    padding: 4px 8px 4px 8px;
+}
+
+#s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link,
+#s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link:hover,
+#s-lg-tabs-container .nav-pills > li > button.s-lg-tab-top-link,
+#s-lg-tabs-container .nav-pills > li > button.s-lg-tab-top-link:hover {
+    width: 100%;
+    float: left;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 4px 15px 4px 15px;
+}
+
+/** !bootstrap_tab_css.twig **/
+ .s-lib-box {border-color: #efefef;
+                border-width: 5px;
+                box-shadow: 0 8px 6px -6px #AAAAAA;
+                border-radius: 4px 4px 4px 4px;
+                background-color: #ffffff;
+            }
+            .s-lib-box-std .s-lib-box-title {background-color: #efefef; background-image: none;color: #000000;
+                border-bottom: 5px solid #efefef;
+            }
+            .s-lib-box .s-lib-box-title {background-color: #efefef; background-image: none;color: #000000;
+                border-bottom: 5px solid #efefef;
+                border-radius: 3px 3px 0px 0px;
+            }
+            .s-lib-box .s-lg-box-footer {
+                border-radius: 0px 0px 3px 3px;
+            }</style><link href="https://libapps-eu.s3.amazonaws.com/accounts/94590/images/Focus-favicon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="https://libapps-eu.s3.amazonaws.com/accounts/94590/images/Focus-favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+<link href="https://libapps-eu.s3.amazonaws.com/accounts/94590/images/Focus-favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+<link href="https://libapps-eu.s3.amazonaws.com/accounts/94590/images/Focus-favicon.ico" rel="shortcut icon" />
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+_paq.push(["trackPageView"]); 
+_paq.push(["enableLinkTracking"]); 
+(function() { 
+var u=(("https:" == document.location.protocol) ? "https" : "http") + 
+"://"+document.location.hostname +"/analytics/"; 
+_paq.push(["setTrackerUrl", u+"piwik.php"]); 
+_paq.push(["setSiteId", "1"]); 
+var d=document, g=d.createElement("script"), 
+s=d.getElementsByTagName("script")[0]; g.type="text/javascript";    g.defer=true; 
+g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s); 
+ })(); 
+Il suffit d
+e substituer
+ le tag 
+« INSERER_LA_FONCTION_ICI
+ » par  la fonction suivante 
+: 
+_paq.push([function() { 
+var self = this; 
+function getOriginalVisitorCookieTimeout() { 
+       var now = new Date(), 
+       nowTs = Math.round(now.getTime() / 1000), 
+       visitorInfo = self.getVisitorInfo(); 
+       var createTs = parseInt(visitorInfo[2]); 
+       var cookieTimeout = 33696000; // 13 mois en secondes 
+       var originalTimeout = createTs + cookieTimeout -
+ nowTs; 
+       return originalTimeout; 
+ } 
+ this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() ); 
+ }]);
+  _paq.push(["setDomains", ["*.focus.univ-rennes1.fr"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//visites.univ-rennes1.fr/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '487']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//visites.univ-rennes1.fr/piwik.php?idsite=487" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<style>
+a:link { color: #d83312; }
+a:visited { color: #d83312; }
+a:hover { color: #d83312;
+                 text-decoration: underline;
+}
+</style>
+
+<!-- BEGIN:style homepage -->
+
+<style>
+
+.nav-pills > li.active > button, .nav-pills > li.active > button:focus, .nav-pills > li.active > button:hover {
+	background-color: #E03C31;
+	color: #fff;
+}
+
+.nav .s-lg-index-nav-btn > button {
+	font-size: 14px;
+	margin: 0 10px;
+	padding: 5px 10px;
+	color: #122026;
+	background-color: transparent;
+}
+
+
+
+.btn-link:focus, .btn-link, .btn-info {
+	color: #fff;
+
+	background-color: transparent;
+        a:link { color: #fff; }
+        a:visited { color: #fff; }
+}
+
+.btn-link:focus, .btn-link, .btn-info:visited {
+      color: #fff; 
+}
+
+.btn-link:focus, .btn-link, .btn-info:link {
+      color: #fff; 
+}
+
+.label-info[href], .label-info[href]:hover, .label-info[href]:link {
+background-color: #d83312;
+color: #fff;
+}
+
+
+.btn-link:focus, .btn-link:hover {
+	color: #122026;
+	text-decoration: underline;
+	background-color: transparent;
+
+
+}
+
+<style>
+
+<!-- END:style homepage-->
+
+.s-lib-box-er-course-list, .s-lib-box-idx-guide-list {
+	box-shadow: none;
+	border-color: #122026;
+	border-width: 3px;
+	margin: 0 0 5px;
+}
+
+</style>
+
+<style>
+
+.s-lib-box-er-course-list, .s-lib-box-idx-blog-post-list, .s-lib-box-idx-er-course-list, .s-lib-box-idx-guide-list {
+	box-shadow: none;
+	border-color: #122026;
+	margin: 0 0 2px;
+
+}
+</style>
+
+<style>
+
+.s-lib-box-er-course-list, .s-lib-box-idx-guide-list {
+	box-shadow: none;
+	border-color: #122026;
+	border-width: 3px;
+	margin: 0 0 5px;
+}
+
+</style>                        
+
+
+
+
+
+<style>
+/*hide subject homepage link from subjects view on homepage*/
+#s-lg-index-list-subjects .alert-info {display: none;}
+</style> 
+
+<style>
+
+.btn-info {
+	color: #fff;
+}
+
+}
+	
+{       background: #d83312;
+	border-color: #fff;
+}
+
+.btn-info:hover {
+	color: #122026;
+	background-color: #ccc;
+	border-color: #ccc;
+}
+
+.btn btn-info s-lg-hp-btn-section {
+             color: #fff;
+}
+
+
+
+</style>
+
+<style>
+
+#s-lg-az-nav, #s-lg-er-nav, #s-lg-hp-nav, #s-lg-profile-nav, #s-lg-srch-nav {
+ color: #333;
+ background: #fff ;
+ border-radius: 5px;
+ margin-bottom: 20px;
+ padding: 0;
+}
+
+#s-lg-az-nav>ul, #s-lg-er-nav>ul, #s-lg-hp-nav>ul, #s-lg-profile-nav>ul, #s-lg-srch-nav>ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+#s-lg-er-nav-bottom, #s-lg-hp-nav-bottom, #s-lg-srch-nav-bottom {
+ padding: 10px;
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+ background-color: #EBEBEB;
+}
+
+</style>
+
+<style>
+
+#s-lg-hp-nav-bottom form>span {
+visibility: hidden;
+}
+
+.s-lg-public-search-field {
+ width: fit content;
+}
+
+.btn-default {  color:  #fff;
+ background-color: #d83312;
+ border-color: none;
+}
+
+.btn {  display: inline-block
+ padding: 6px 12px
+ margin-bottom: 0
+ font-size: 14px
+ font-weight: 400
+ line-height: 1.42857143
+ text-align: center
+ white-space: nowrap
+ vertical-align: middle
+ -ms-touch-action: manipulation
+ touch-action: manipulation
+ cursor: pointer
+ -webkit-user-select: none
+ -moz-user-select: none
+ -ms-user-select: none
+ user-select: none
+ background-image: none
+ border: 1px solid transparent
+ border-radius: 4px
+}
+
+button, input, select, textarea {  font-family: inherit
+ font-size: inherit
+ line-height: inherit
+}
+
+</style>
+
+<style>
+
+.s-lib-box-er-course-list, .s-lib-box-idx-guide-list {
+ box-shadow: none;
+ border-color: #ddd;
+border-width: 3px;
+ margin: 0 0 5px;
+}
+
+</style>
+
+<style>
+
+.navbar-default {
+  background-color: #ebebeb;
+  border-color: #fff;
+}
+/***essai/
+
+<style>
+.s-lg-srch-facet-sort
+outline: 1px solid #b71979;
+border-color: #b71979;
+
+</style>
+
+<style>
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+width: 100%;
+float: right;
+}
+</style>
+
+<style>
+.btn-info, .btn-info.active, .btn-info:active, .btn-info:focus, .btn-info:hover {
+background-color: #e03c31;
+}
+
+</style>
+
+
+<style>
+
+.nav .s-lg-index-nav-btn>a {
+ font-size: 14px;
+ margin: 0 10px;
+ padding: 5px 10px;
+color: #000;
+ background-color: #D404B1B
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+font-weight: bold; 
+color: #fff;
+ background-color: #d83312;
+}
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+ color: #D40B1B;
+font-weight: bold;
+outline: 0;
+ background-color: #fff;
+
+}
+</style>
+
+
+<style>
+
+#s-lg-hp-nav-bottom form>span (No default CSS)
+
+.s-lg-public-search-field {
+ width: 200px;
+}
+
+.btn-default {  color: #333
+background-color: #fff;
+ border-color: #ccc;
+}
+
+.btn {  display: inline-block
+ padding: 6px 12px
+ margin-bottom: 0
+ font-size: 14px
+ font-weight: 400
+ line-height: 1.42857143
+ text-align: center
+ white-space: nowrap
+ vertical-align: middle
+ -ms-touch-action: manipulation
+ touch-action: manipulation
+ cursor: pointer
+ -webkit-user-select: none
+ -moz-user-select: none
+ -ms-user-select: none
+ user-select: none
+ background-image: none
+ border: 1px solid transparent
+ border-radius: 4px
+}
+
+button, input, select, textarea {  font-family: inherit
+ font-size: inherit
+ line-height: inherit
+
+</style>
+
+<style>
+
+#s-lib-box-12586555 {
+ border-color: #b71979;
+ border-width: 1px;
+ box-shadow: 0 8px 6px -6px #AAAAAA;
+ border-radius: 4px 4px 4px 4px;
+ background-color: #fff;
+}
+</style>
+
+<!-- Ubib : Diabolocom widget-->
+<div class="dblcm-box"><!--div class="dblcm-box-inner"> </div--></div>
+<script type="text/javascript">
+   var _dblcmDomain = "https://mc1-entrypoint.engage.diabolocom.com";
+   var _dblcmKey    = "0245cc5d07020a1eeb916ddec9e08c1eb3150226";
+   (function() {
+       var _d   = document.createElement("script");
+       _d.type  = "text/javascript";
+       _d.async = true;
+       _d.src   = _dblcmDomain + "/chat.js?scenario=" + _dblcmKey;
+       var _b = document.getElementsByTagName("body")[0];
+       _b.appendChild(_d);
+   })();
+</script>
+
+<!-- Ubib widget Code -->
+
+<script src="https://region-eu.libanswers.com/load_chat.php?hash=2c1fcb4659c9f298fe01a112ca18b09c"></script>
+
+<!-- End Ubib widget Code -->    <script>
+                springSpace.cookieConsentReadMore = "Afin de vous faciliter l'usage de ce site, le syst\u00e8me charge plusieurs cookies dans votre navigateur. Ces cookies ne sont mutualis\u00e9s avec aucun partenaire. De plus votre adresse IP et les informations relatives \u00e0 votre navigateur sont conserv\u00e9es dans les logs envoy\u00e9s au serveurs de Rennes 1 et de Springshare et sont utilis\u00e9s pour g\u00e9n\u00e9rer des statistiques d'usage anonymes. L'Universit\u00e9 utilise ces statistiques provenant de Springshare et les compl\u00e8te avec celles du traceur Matomo (h\u00e9berg\u00e9 en local \u00e0 Rennes 1)  pour mesurer l'audience de ce site et des diff\u00e9rentes pages qui le constituent.";
+        springSpace.cookieConsentConfig = {
+            placement: 'top',
+            consent_message: "Ce site utilise un cookie qui conserve votre adresse IP \u00e0 des fins uniquement statistiques. Ces informations ne sont conserv\u00e9es que sur le serveur de l'universit\u00e9 et ne sont livr\u00e9es \u00e0 aucune partie tierce <a id=\"s-ui-cc-read-more-link\">Pour en savoir plus<\/a>",
+            read_more_callback: function () {
+                springSpace.UI.alert({
+                    height: 400, width: 400, title: "Privacy Notification", content: springSpace.cookieConsentReadMore,
+                    focus_on_close: false
+                });
+            }
+        };
+        springSpace.cookieConsent.alert(springSpace.cookieConsentConfig);
+            </script>
+<script>
+var springStats = springStats || {};
+springStats.saConfig = springStats.saConfig || {
+    site_id: 8822,
+    tracking_parameters: {"_st_guide_id":704379,"_st_page_id":5071116,"_st_site_id":8822},
+    tracking_server_host: "libguides-proc-eu.springyaws.com"
+};
+</script>
+<script async  src="/web/js/sa.min.js?3116" ></script>
+		<script>
+			springSpace.Common = springSpace.Common || { };
+			springSpace.Common.constant = {
+					PROCESSING: {
+						ACTION_DISPLAY_POLL: 159
+					}
+			};
+			springSpace.Common.baseURL = "https://focus.univ-rennes1.fr/";
+			
+			handleScroll=function() {
+                if (false) {
+					var target_elt = "#s-lg-page-section-5071116";
+					jQuery("html, body").animate({ scrollTop: jQuery(target_elt).offset().top }, 750);
+					if (jQuery(this).scrollTop() > 220) {
+						jQuery("#s-lib-scroll-top").fadeIn(750);
+					}
+				}
+			}
+	   </script>
+        <script>
+            // Enable tooltips.
+            jQuery(function () {
+                try {
+                    springSpace.UI.initPopOvers();
+                    jQuery(".az-bs-tooltip").tooltip();
+                } catch (e) { }
+            });jQuery(window).one('load', function() {springSpace.springTrack.trackPage({_st_type_id: '1',_st_guide_id: '704379',_st_page_id: '5071116'});});
+            jQuery(document).ready(function() {
+                handleScroll();
+            });
+        </script><!-- BEGIN: Analytics code --><!-- Piwik --><script type="text/javascript">  var _paq = _paq || [];  _paq.push(["setDomains", ["*.focus.univ-rennes1.fr"]]);  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u="//visites.univ-rennes1.fr/";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', '487']);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script><noscript><p><img src="//visites.univ-rennes1.fr/piwik.php?idsite=487" style="border:0;" alt="" /></p></noscript><!-- End Piwik Code --><!-- END: Analytics code --></head>
+<!-- SIDE NAV -->
+<body class="s-lg-guide-body">
+<a id="s-lg-public-skiplink" class="alert-info" href="#s-lg-guide-main">Aller au contenu principal</a><!-- obsolete_browser_alert.twig -->
+<div id="obsolete_browser_alert" class="alert alert-danger obsolete_browser_alert">
+    Il semble que vous utilisez Internet Explorer 11 ou une version antérieure. Ce site Web fonctionne mieux avec les navigateurs modernes tels que les dernières versions de Chrome, Firefox, Safari et Edge. Si vous continuez avec ce navigateur, vous pouvez vo
+</div>
+
+<style>
+    .obsolete_browser_alert {
+        display: none;
+        font-weight: bold;
+        font-size: 1.25em;
+        text-align: center;
+        padding: 20px;
+        z-index:9999
+    }
+</style>
+
+<script>
+    // this property being set indicates an IE browser, so we show the alert
+    if (window.document.documentMode) {
+        document.getElementById("obsolete_browser_alert").style.display = "block";
+    }
+</script>
+<!-- !obsolete_browser_alert.twig -->
+<!-- BEGIN: Page Header -->
+ <div id="s-lib-banner" class="container s-lib-banner-public"><a href="https://bibliotheques.univ-rennes1.fr" title="" target="" aria-hidden="true" tabindex="-1" ><img alt="Banner" name="s-lib-banner-img" id="s-lib-banner-img" class="img-responsive" src="//libapps-eu.s3.amazonaws.com/sites/8822/banner/bandeau-web-focus.jpg" aria-hidden="true" tabindex="-1" /></a></div><!-- END: Page Header -->
+<!-- BEGIN: Guide Header -->
+<div id="s-lg-guide-header" class="container s-lib-header s-lib-side-borders">
+    <nav id="s-lib-bc" aria-label="breadcrumb">
+        <ol id="s-lib-bc-list" class="breadcrumb"><li id="s-lib-bc-customer"><a title="Biblioth&egrave;ques de l'Universit&eacute; de Rennes 1" href="https://bibliotheques.univ-rennes1.fr">Bibliothèques de l'Université de Rennes 1</a></li><li id="s-lib-bc-site"><a title="Focus" href="https://focus.univ-rennes1.fr/">Focus</a></li><li id="s-lib-bc-guide"><a title="MEQS - Recherche d'information scientifique" href="https://focus.univ-rennes1.fr/MEQS_2022">MEQS - Recherche d'information scientifique</a></li><li id="s-lib-bc-page" class="active">Première séance : recherche d'informations dans les bases de données</li></ol>    </nav>
+    <div class="pull-right">
+        <div id="s-lg-guide-header-search">
+            
+                <div id="s-lg-guide-search-box">
+                    <form role="search" id="s-lg-guide-search-form" action="https://focus.univ-rennes1.fr/srch.php"
+                    method="GET">
+                        <div class="input-group input-group-sm">
+                            <input type="text" id="s-lg-guide-search-terms" name="q" class="form-control" placeholder="Chercher ce guide ">
+                            <label class="sr-only" for="s-lg-guide-search-terms">Chercher ce guide </label><input type="hidden" name="guide_id" value="704379" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Chercher</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>        </div>
+            </div>
+    <div id="s-lg-guide-header-info">
+        <h1 id="s-lg-guide-name">MEQS - Recherche d'information scientifique</h1>
+        <div id="s-lg-guide-desc-container">
+            <span id="s-lg-guide-description"></span>
+        </div>
+    </div>
+</div>
+<!-- END: Guide Header -->
+<div id="s-lg-guide-tabs-title-bar" class="container s-lib-side-borders"></div>
+<div id="s-lg-side-nav-content" class="container s-lib-side-borders pad-top-med">
+    <div class="row">
+        <div class="col-md-3 s-lg-tabs-side pad-bottom-med">
+            <div id="s-lg-tabs-container">
+                <div id="s-lg-guide-tabs" role="navigation" aria-label="Guide Pages">
+                    <ul class="nav nav-pills nav-stacked split-button-nav">
+                        <li class="active"><a title="" class=" active" href="javascript:void(0);" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071116').offset().top }, 750);"><span>Première séance : recherche d'informations dans les bases de données</span></a><ul  class="s-lg-subtab-ul nav nav-pills nav-stacked"><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5070651').offset().top }, 750);"">Accueil </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5070653').offset().top }, 750);"">Analyser son sujet et préparer sa recherche </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5070656').offset().top }, 750);"">Se repérer dans le paysage de la publication scientifique </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5070654').offset().top }, 750);"">Rechercher dans Pubmed </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5070657').offset().top }, 750);"">Utiliser différents outils documentaires et en optimiser l'utilisation </a></li></ul></li><li class="active dropdown clearfix"><a title="" class="s-lg-tab-top-link" href="javascript:void(0);" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071117').offset().top }, 750);"><span>Deuxième séance : faire de la veille</span></a><a class="s-lg-tab-drop dropdown-toggle" data-toggle="dropdown" aria-label="Guide sub-page dropdown control" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></a><ul  class="s-lg-subtab-ul dropdown-menu"><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071106').offset().top }, 750);"">Des outils, des usages </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071107').offset().top }, 750);"">Recherche inverse d'image </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071108').offset().top }, 750);"">Faire de la veille sur les réseaux sociaux </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071110').offset().top }, 750);"">Faire de la veille avec des flux RSS </a></li><li class="active"><a title="" href="javascript:void(0);" style=" onclick="jQuery('html, body').animate({ scrollTop: jQuery('#s-lg-page-section-5071114').offset().top }, 750);"">Faire de la veille avec Pubmed </a></li></ul></li>                    </ul>
+                    <div class="s-lg-row margin-top-med"><div id="s-lg-col-0"><div class="s-lg-col-boxes"></div></div></div>                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="s-lg-tab-content">
+                <div id="s-lg-guide-main" class="tab-pane active" tabindex="-1">
+                    
+					<div id="s-lg-page-section-5071116" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Première séance : recherche d'informations dans les bases de données</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"></div></div></div>
+					<div id="s-lg-page-section-5070651" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Accueil</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18849608" class="s-lg-box-wrapper-18849608">
+					<div id="s-lg-box-15894630-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894630" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Accueil et présentation de la journée
+                                </h2>
+							<div id="s-lg-box-collapse-15894630" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378048" class="  clearfix">
+				<p><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/flag_spot.png" style="width: 22px; height: 30px;" /> <strong>Interventions BU dans le cadre de l&#39;UE 1 </strong></p>
+
+<ul>
+	<li><strong>Recherche d&#39;information scientifique et base de donn&eacute;es : lundi 12/09 [Formateurs : Harold Jouan et Mathilde Kergozien]</strong></li>
+	<li><strong>Veille documentaire : mardi 13/09 [Formateur : Damien Belv&egrave;ze]</strong></li>
+	<li><strong>G&eacute;rer ses r&eacute;f&eacute;rences bibliographiques avec Zotero : mercredi 14/09 [Formateurs : Catherine Tourneur et Yohann Lecorgne]</strong></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+		   </div><div class="">
+                        <ul id="s-lg-link-list-36849773" class="s-lg-link-list s-lg-link-list-4"><li class=" pad-bottom-sm">
+                        
+			<div id="s-lg-content-34378049" class="">
+				<span>
+					<a href="https://focus.univ-rennes1.fr/ld.php?content_id=34378049" rel="nofollow" target="_blank"
+					onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '5',_st_content_id: '34378049'});"><i class="s-lg-file-icon fa fa-file-pdf-o" style="font-size:1.5em; margin-right:5px;"></i>Version téléchargeable du support distribué
+					</a>
+				</span><div id="s-lg-file-desc-34378049" class="s-lg-file-desc"></div>
+			</div></li>
+                        
+                            </ul>
+                            </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5070653" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Analyser son sujet et préparer sa recherche</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18849614" class="s-lg-box-wrapper-18849614">
+					<div id="s-lg-box-15894636-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894636" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Cerner mon sujet
+                                </h2>
+							<div id="s-lg-box-collapse-15894636" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378056" class="  clearfix">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/s4d7SPN-qmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		   </div>
+			<div id="s-lg-content-34378057" class="  clearfix">
+				<blockquote>
+<p><a href="https://infotrack.unige.ch/" target="_blank"><em><span style="font-size:12px;">Licence CC BY-NC-SA 4.0. 2016, Biblioth&egrave;que de l&#39;Universit&eacute; de Gen&egrave;ve</span></em></a></p>
+</blockquote>
+
+<p><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;">Avant de se lancer dans une recherche sur des moteurs de recherche ou des bases de données, des <strong>étapes préalables</strong> permettent de bien la d&eacute;buter :</span></span></p>
+
+<ul>
+	<li style="font-size: 10pt; font-family: &quot;DejaVuSans&quot;;">
+	<p><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;">Faire le point sur les <strong>objectifs</strong> du travail à rendre et sa nature (dissertation, compte-rendu, &eacute;tude de cas, expos&eacute; oral...) et du temps dont vous disposez.</span></span></p>
+	</li>
+	<li style="font-size: 10pt; font-family: &quot;DejaVuSans&quot;;">
+	<p><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;">Faire le point sur <strong>ce que vous connaissez déjà.</strong> </span></span></p>
+	</li>
+	<li style="font-size: 10pt; font-family: &quot;DejaVuSans&quot;;">
+	<p><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;">Préciser votre sujet en utilisant la <strong>méthode du QQQOCP</strong> </span></span></p>
+	</li>
+</ul>
+
+<p style="font-size: 10pt; font-family: &quot;DejaVuSans&quot;;"><span style="border-block: unset; border-inline: unset; border-start-start-radius: unset; border-start-end-radius: unset; border-end-start-radius: unset; border-end-end-radius: unset; overflow-inline: unset; overflow-block: unset; overscroll-behavior-inline: unset; overscroll-behavior-block: unset; margin-block: unset; margin-inline: unset; scroll-margin-block: unset; scroll-margin-inline: unset; padding-block: unset; padding-inline: unset; scroll-padding-block: unset; scroll-padding-inline: unset; inset-block: unset; inset-inline: unset; block-size: unset; min-block-size: unset; max-block-size: unset; inline-size: unset; min-inline-size: unset; max-inline-size: unset; background: unset; background-blend-mode: unset; border: unset; border-radius: unset; box-decoration-break: unset; -moz-float-edge: unset; display: unset; position: fixed; float: unset; clear: unset; vertical-align: unset; overflow: unset; overflow-anchor: unset; transition: unset; animation: unset; transform: unset; rotate: unset; scale: unset; translate: unset; offset: unset; scroll-behavior: unset; scroll-snap-align: unset; scroll-snap-type: unset; overscroll-behavior: unset; isolation: unset; break-after: unset; break-before: unset; break-inside: unset; resize: unset; perspective: unset; perspective-origin: unset; backface-visibility: unset; transform-box: unset; transform-style: unset; transform-origin: unset; contain: unset; -moz-appearance: unset; -moz-orient: unset; will-change: unset; shape-image-threshold: unset; shape-margin: unset; shape-outside: unset; touch-action: unset; -webkit-line-clamp: unset; columns: unset; column-fill: unset; column-rule: unset; column-span: unset; content: unset; counter-increment: unset; counter-reset: unset; counter-set: unset; opacity: unset; box-shadow: unset; clip: rect(0px, 0px, 0px, 0px); filter: unset; mix-blend-mode: unset; font: unset; font-synthesis: unset; visibility: unset; writing-mode: unset; text-orientation: unset; color-adjust: unset; image-rendering: unset; image-orientation: unset; dominant-baseline: unset; text-anchor: unset; color-interpolation: unset; color-interpolation-filters: unset; fill: unset; fill-opacity: unset; fill-rule: unset; shape-rendering: unset; stroke: unset; stroke-width: unset; stroke-linecap: unset; stroke-linejoin: unset; stroke-miterlimit: unset; stroke-opacity: unset; stroke-dasharray: unset; stroke-dashoffset: unset; clip-rule: unset; marker: unset; paint-order: unset; -moz-context-properties: unset; border-collapse: unset; empty-cells: unset; caption-side: unset; border-spacing: unset; color: unset; text-transform: unset; hyphens: unset; -moz-text-size-adjust: unset; text-indent: unset; overflow-wrap: unset; word-break: unset; text-justify: unset; text-align-last: unset; text-align: unset; letter-spacing: unset; word-spacing: unset; white-space: pre; text-shadow: unset; text-emphasis: unset; text-emphasis-position: unset; -moz-tab-size: unset; line-break: unset; -webkit-text-fill-color: unset; -webkit-text-stroke: unset; ruby-align: unset; ruby-position: unset; text-combine-upright: unset; text-rendering: unset; -moz-control-character-visibility: unset; text-underline-offset: unset; text-underline-position: unset; text-decoration-skip-ink: unset; cursor: unset; pointer-events: unset; -moz-user-input: unset; -moz-user-modify: unset; -moz-user-focus: unset; caret-color: unset; scrollbar-color: unset; list-style: unset; quotes: unset; -moz-image-region: unset; margin: unset; scroll-margin: unset; outline: unset; -moz-outline-radius: unset; outline-offset: unset; padding: unset; scroll-padding: unset; top: 0px; right: unset; bottom: unset; left: unset; z-index: unset; flex-flow: unset; place-content: unset; place-items: unset; flex: unset; place-self: unset; order: unset; width: unset; min-width: unset; max-width: unset; height: unset; min-height: unset; max-height: unset; box-sizing: unset; object-fit: unset; object-position: unset; grid-area: unset; grid: unset; gap: unset; vector-effect: unset; stop-color: unset; stop-opacity: unset; flood-color: unset; flood-opacity: unset; lighting-color: unset; mask-type: unset; clip-path: unset; mask: unset; x: unset; y: unset; cx: unset; cy: unset; rx: unset; ry: unset; r: unset; table-layout: unset; text-overflow: unset; text-decoration: unset; ime-mode: unset; scrollbar-width: unset; user-select: text; -moz-window-dragging: unset; -moz-force-broken-image-icon: unset; -moz-box-align: unset; -moz-box-direction: unset; -moz-box-flex: unset; -moz-box-orient: unset; -moz-box-pack: unset; -moz-box-ordinal-group: unset;">https://view.genial.ly/5fc622c2f115960d23228ec2/horizontal-infographic-lists-cycle-de-la-veille-copie</span><span style="border-block: unset; border-inline: unset; border-start-start-radius: unset; border-start-end-radius: unset; border-end-start-radius: unset; border-end-end-radius: unset; overflow-inline: unset; overflow-block: unset; overscroll-behavior-inline: unset; overscroll-behavior-block: unset; margin-block: unset; margin-inline: unset; scroll-margin-block: unset; scroll-margin-inline: unset; padding-block: unset; padding-inline: unset; scroll-padding-block: unset; scroll-padding-inline: unset; inset-block: unset; inset-inline: unset; block-size: unset; min-block-size: unset; max-block-size: unset; inline-size: unset; min-inline-size: unset; max-inline-size: unset; background: unset; background-blend-mode: unset; border: unset; border-radius: unset; box-decoration-break: unset; -moz-float-edge: unset; display: unset; position: fixed; float: unset; clear: unset; vertical-align: unset; overflow: unset; overflow-anchor: unset; transition: unset; animation: unset; transform: unset; rotate: unset; scale: unset; translate: unset; offset: unset; scroll-behavior: unset; scroll-snap-align: unset; scroll-snap-type: unset; overscroll-behavior: unset; isolation: unset; break-after: unset; break-before: unset; break-inside: unset; resize: unset; perspective: unset; perspective-origin: unset; backface-visibility: unset; transform-box: unset; transform-style: unset; transform-origin: unset; contain: unset; -moz-appearance: unset; -moz-orient: unset; will-change: unset; shape-image-threshold: unset; shape-margin: unset; shape-outside: unset; touch-action: unset; -webkit-line-clamp: unset; columns: unset; column-fill: unset; column-rule: unset; column-span: unset; content: unset; counter-increment: unset; counter-reset: unset; counter-set: unset; opacity: unset; box-shadow: unset; clip: rect(0px, 0px, 0px, 0px); filter: unset; mix-blend-mode: unset; font: unset; font-synthesis: unset; visibility: unset; writing-mode: unset; text-orientation: unset; color-adjust: unset; image-rendering: unset; image-orientation: unset; dominant-baseline: unset; text-anchor: unset; color-interpolation: unset; color-interpolation-filters: unset; fill: unset; fill-opacity: unset; fill-rule: unset; shape-rendering: unset; stroke: unset; stroke-width: unset; stroke-linecap: unset; stroke-linejoin: unset; stroke-miterlimit: unset; stroke-opacity: unset; stroke-dasharray: unset; stroke-dashoffset: unset; clip-rule: unset; marker: unset; paint-order: unset; -moz-context-properties: unset; border-collapse: unset; empty-cells: unset; caption-side: unset; border-spacing: unset; color: unset; text-transform: unset; hyphens: unset; -moz-text-size-adjust: unset; text-indent: unset; overflow-wrap: unset; word-break: unset; text-justify: unset; text-align-last: unset; text-align: unset; letter-spacing: unset; word-spacing: unset; white-space: pre; text-shadow: unset; text-emphasis: unset; text-emphasis-position: unset; -moz-tab-size: unset; line-break: unset; -webkit-text-fill-color: unset; -webkit-text-stroke: unset; ruby-align: unset; ruby-position: unset; text-combine-upright: unset; text-rendering: unset; -moz-control-character-visibility: unset; text-underline-offset: unset; text-underline-position: unset; text-decoration-skip-ink: unset; cursor: unset; pointer-events: unset; -moz-user-input: unset; -moz-user-modify: unset; -moz-user-focus: unset; caret-color: unset; scrollbar-color: unset; list-style: unset; quotes: unset; -moz-image-region: unset; margin: unset; scroll-margin: unset; outline: unset; -moz-outline-radius: unset; outline-offset: unset; padding: unset; scroll-padding: unset; top: 0px; right: unset; bottom: unset; left: unset; z-index: unset; flex-flow: unset; place-content: unset; place-items: unset; flex: unset; place-self: unset; order: unset; width: unset; min-width: unset; max-width: unset; height: unset; min-height: unset; max-height: unset; box-sizing: unset; object-fit: unset; object-position: unset; grid-area: unset; grid: unset; gap: unset; vector-effect: unset; stop-color: unset; stop-opacity: unset; flood-color: unset; flood-opacity: unset; lighting-color: unset; mask-type: unset; clip-path: unset; mask: unset; x: unset; y: unset; cx: unset; cy: unset; rx: unset; ry: unset; r: unset; table-layout: unset; text-overflow: unset; text-decoration: unset; ime-mode: unset; scrollbar-width: unset; user-select: text; -moz-window-dragging: unset; -moz-force-broken-image-icon: unset; -moz-box-align: unset; -moz-box-direction: unset; -moz-box-flex: unset; -moz-box-orient: unset; -moz-box-pack: unset; -moz-box-ordinal-group: unset;">https://view.genial.ly/5fc622c2f115960d23228ec2/horizontal-infographic-lists-cycle-de-la-veill<span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;">Identifier les <strong>concepts principaux.</strong> </span></span></span></p>
+
+<ul>
+	<li style="font-size: 10pt; font-family: &quot;DejaVuSans&quot;;">
+	<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Formuler une <strong>problématique</strong> / une <strong>question de recherche.</strong></span></span></p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div style="width: 100%;">
+<div style="position: relative; padding-bottom: 50.00%; padding-top: 0; height: 0;"><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0" height="800" scrolling="yes" src="https://view.genial.ly/5fc622c2f115960d23228ec2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="text/html" width="1600"></iframe></div>
+</div>
+
+<h5 style="text-align: justify;">&nbsp;</h5>
+
+<h5 style="text-align: justify;">&nbsp;</h5>
+
+<h5 style="text-align: justify;"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" style="width: 40px; height: 40px;" /> <strong>Activit&eacute; : point 1. du support distribu&eacute;</strong></h5>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849615" class="s-lg-box-wrapper-18849615">
+					<div id="s-lg-box-15894637-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894637" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Poser sa question de recherche
+                                </h2>
+							<div id="s-lg-box-collapse-15894637" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378058" class="  clearfix">
+				<h5 style="text-align: justify;"><strong>Elaborer une probl&eacute;matique</strong></h5>
+
+<p style="text-align: justify;">La probl&eacute;matique est l&#39;e<span>nsemble</span><span> des probl&egrave;mes ou difficult&eacute;s clairement identifi&eacute;s, li&eacute;s par une th&eacute;matique commune et que l&#39;on r&eacute;sout par la r&eacute;flexion et l&#39;analyse :</span></p>
+
+<ul>
+	<li style="text-align: justify;"><span>Elle prend g&eacute;n&eacute;ralement la forme d&#39;une question principale, associ&eacute;e &agrave; des hypoth&egrave;ses de recherche.</span></li>
+	<li style="text-align: justify;"><span>Elle donne du sens &agrave; l&#39;information, en allant au-del&agrave; d&#39;une simple pr&eacute;sentation des donn&eacute;es. </span></li>
+	<li style="text-align: justify;"><span>Elle cr&eacute;e un fil conducteur et donne une valeur ajout&eacute;e </span><span>&agrave; l&#39;expos&eacute;, qu&#39;il soit &eacute;crit ou oral.</span><span></span></li>
+	<li style="text-align: justify;">
+	<p style="text-align: justify;"><span>Elle se construit et s&#39;affine au fur et &agrave; mesure de la recherche, &agrave; la lecture des documents.</span></p>
+	</li>
+</ul>
+
+<p style="text-align: justify;"><span><strong>Pour en savoir plus</strong> : </span></p>
+
+<ul>
+	<li style="text-align: justify;"><span>Fr&eacute;con, G. </span><a href="https://univ.scholarvox.com.passerelle.univ-rennes1.fr/catalog/book/docid/88806738" target="_blank"><em>Formuler une probl&eacute;matique : Dissertation, m&eacute;moire, th&egrave;se, rapport de stage</em></a><span><a href="https://univ.scholarvox.com.passerelle.univ-rennes1.fr/catalog/book/docid/88806738" target="_blank">.</a> Dunod, 2012. **</span></li>
+</ul>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849616" class="s-lg-box-wrapper-18849616">
+					<div id="s-lg-box-15894638-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894638" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Définir des mots-clés
+                                </h2>
+							<div id="s-lg-box-collapse-15894638" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378059" class="  clearfix">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qINY6lSxr9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		   </div>
+			<div id="s-lg-content-34378060" class="  clearfix">
+				<blockquote>
+<p><a href="https://infotrack.unige.ch/" target="_blank"><em><span style="font-size:12px;">Licence CC BY-NC-SA 4.0. 2016, Biblioth&egrave;que de l&#39;Universit&eacute; de Gen&egrave;ve</span></em></a></p>
+</blockquote>
+
+<p><font face="Arial, sans-serif">Pour pr&eacute;parer votre recherche, vous allez &eacute;tablir une liste de mots-cl&eacute;s :</font></p>
+
+<ul>
+	<li>
+	<p><font face="Arial, sans-serif">d&eacute;cliner chaque concept en une s&eacute;rie de <strong>mots-cl&eacute;s</strong>. </font></p>
+	</li>
+	<li>
+	<p><font face="Arial, sans-serif">chercher des <strong>synonymes</strong>, des <strong>termes &eacute;quivalents</strong>. </font></p>
+	</li>
+	<li>
+	<p><font face="Arial, sans-serif">traduire ces mots-cl&eacute;s en<strong> anglais </strong>si besoin</font>.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h5><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" style="width: 40px; height: 40px;" /> <strong>Activit&eacute; : point 2 du support distribu&eacute;</strong></h5>
+
+<p>&nbsp;</p>
+
+<p><strong><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/gear.png" style="width: 40px; height: 40px;" />&nbsp;&nbsp; Des outils pour vous aider &agrave; identifier synonymes, termes &eacute;quivalents, termes plus g&eacute;n&eacute;raux ou plus sp&eacute;cifiques :</strong></p>
+
+<ul>
+	<li>Pour le vocabulaire g&eacute;n&eacute;ral,&nbsp; des dictionnaires de synonymes, par exemple : celui en ligne du <a href="https://crisco2.unicaen.fr/des/">CRISCO (Centre de recherche - Universit&eacute; de Caen)</a></li>
+	<li>Pour le vocabulaire m&eacute;dical, des terminologies sp&eacute;cialis&eacute;es, par exemple <a href="https://hetop.eu/hetop/fr/">Hetop</a></li>
+	<li>Pour les traduction anglais, des dictionnaires ou des outils de traduction (tr&egrave;s nombreux en ligne), par exemple <a href="https://www.deepl.com/translator">Deepl</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849617" class="s-lg-box-wrapper-18849617">
+					<div id="s-lg-box-15894639-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894639" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Utiliser les opérateurs logiques dans son équation de recherche
+                                </h2>
+							<div id="s-lg-box-collapse-15894639" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378061" class="  clearfix">
+				<p>Pour vous assurer d&rsquo;&ecirc;tre bien compris par les outils de recherche documentaire, vous devez traduire votre question de recherche en &eacute;quation de recherche.</p>
+
+<p>Voici quelques astuces qui vous permettront de gagner en efficacit&eacute; :</p>
+
+<ul>
+	<li>
+	<h4><strong>Les op&eacute;rateurs bool&eacute;ens</strong></h4>
+	</li>
+</ul>
+
+<div style="width: 100%;">
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0" height="562.5px" scrolling="yes" src="https://view.genial.ly/5efb4c628879b60d9826ca51" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" type="text/html" width="1000px"></iframe></div>
+</div>
+		   </div>
+			<div id="s-lg-content-34378062" class="  clearfix">
+				<h5><strong>Autres astuces de recherche</strong></h5>
+
+<ul>
+	<li>
+	<h6><strong>La troncature *</strong></h6>
+	</li>
+</ul>
+
+<p>Elle permet de chercher sur la racine d&#39;un mot (ex : aliment* prendra en compte les termes aliment, aliments, alimentation, alimentaire...).</p>
+
+<ul>
+	<li>
+	<h6><strong>Les guillemets &quot;...&quot;</strong></h6>
+	</li>
+</ul>
+
+<p>Ils permettent d&#39;interroger une expression exacte (ex : &quot;d&eacute;mocratie participative&quot;).</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h5><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" style="width: 40px; height: 40px;" /> <strong>Activit&eacute; (op&eacute;rateurs et astuces de recherche) : <a href="https://app.klaxoon.com/join/WQVTW59" target="_blank">quizz</a></strong></h5>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5070656" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Se repérer dans le paysage de la publication scientifique</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18849622" class="s-lg-box-wrapper-18849622">
+					<div id="s-lg-box-15894644-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894644" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Introduction de la seconde partie - Quels outils / ressources documentaires utilisez-vous ?
+                                </h2>
+							<div id="s-lg-box-collapse-15894644" >
+								<div class="s-lib-box-content">
+									<div class="">
+                        <ul id="s-lg-link-list-36849792" class="s-lg-link-list s-lg-link-list-2"><li class="s-lg-tn-li clearfix">
+                        
+			<div id="s-lg-content-34378068" class=""><span><a href="https://app.klaxoon.com/join/U54K3ZA" target="_blank"  onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '2',_st_content_id: '34378068'});">
+                    <div id="s-lg-tn-34378068" class="s-lg-tn pad-right-sm">
+                                <img loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" height="40" width="40" alt="" class="pull-left margin-right-sm">
+                    </div>Trouver de l'info</a> 
+				</span><div id="s-lg-link-desc-34378068" class="s-lg-link-desc">Indiquez au moyens de posts-its où vous allez chercher de l'information médicale ou scientifique</div>
+			</div></li>
+                        
+                            </ul>
+                            </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849623" class="s-lg-box-wrapper-18849623">
+					<div id="s-lg-box-15388027-container" class="s-lib-box-container">
+						<div id="s-lg-box-15388027" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Se repérer dans le paysage de la Publication scientifique pour évaluer ses sources (5 minutes)
+                                </h2>
+							<div id="s-lg-box-collapse-15388027" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-33333492" class="  clearfix">
+				<p><img alt="cycle de la publication" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/112982/images/pasted_image_0.png" /></p>
+
+		   </div>
+			<div id="s-lg-content-33333524" class="  clearfix">
+				<p>En haut du sch&eacute;ma, le mode traditionnel de publication.</p>
+
+<p>En bas, ce mode s&#39;accompagne d&#39;une mise en ligne de l&#39;article tel qu&#39;il est soumis &agrave; diff&eacute;rents &eacute;diteurs en vue d&#39;une publication. Ce qu&#39;on appelle alors une <strong>pr&eacute;publication</strong> (ou en anglais <strong>preprint</strong>) reste accessible sur des serveurs d&eacute;di&eacute;s &agrave; ce type d&#39;information (en m&eacute;decine : <a href="https://www.biorxiv.org/" target="_blank">biorxiv</a> et <a href="https://www.medrxiv.org" target="_blank">medrxiv</a>) y compris apr&egrave;s que l&#39;&eacute;tude ait &eacute;t&eacute; publi&eacute;e.</p>
+
+<p>Cons&eacute;quence : une pr&eacute;publication (ou preprint) est une source importante dans la mesure o&ugrave; le processus de r&eacute;vision par les pairs peut prendre plusieurs mois, car si elle a &eacute;t&eacute; publi&eacute;e r&eacute;cemment elle contient des informations tr&egrave;s &quot;fra&icirc;ches&quot;, ce qui est important sur un sujet tr&egrave;s &eacute;volutif comme une pand&eacute;mie. En m&ecirc;me temps, sauf quand cela est mentionn&eacute; dans la notice de l&#39;article, le preprint n&#39;a pas &eacute;t&eacute; encore &eacute;t&eacute; revu par les pairs et sa fiabilit&eacute; peut &ecirc;tre remise en cause.</p>
+
+<p>R&eacute;cemment dans le cas du COVID-19, un grand nombre de pr&eacute;publications ont &eacute;t&eacute; envoy&eacute;es sur ces serveurs. Beaucoup ne contiennent pas d&#39;information int&eacute;ressante du point de vue scientifique, d&#39;autres des erreurs ou des informations biais&eacute;es. Il faut prendre cette information avec du recul.</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18850651" class="s-lg-box-wrapper-18850651">
+					<div id="s-lg-box-15895510-container" class="s-lib-box-container">
+						<div id="s-lg-box-15895510" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Identifier les publications EBM, les essais cliniques
+                                </h2>
+							<div id="s-lg-box-collapse-15895510" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34379694" class="  clearfix">
+				<p><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/112982/images/pyramide_EBM.png" /></p>
+		   </div>
+			<div id="s-lg-content-34379695" class="  clearfix">
+				<table class="table table-bordered" style="border: 1px solid rgb(221, 221, 221);">
+	<tbody>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">m&eacute;ta-analyse</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">revue syst&eacute;matique avec &quot;pooling&quot; (combinaison) du nombre de patients de chaque groupe dans plusieurs &eacute;tudes cliniques sur un m&ecirc;me sujet</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">revue syst&eacute;matique</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">revue de litt&eacute;rature exhaustive (toutes les &eacute;tudes sur un sujet donn&eacute; sont prises en compte et synth&eacute;tis&eacute;es). Le poids statistique de chaque &eacute;tude est pris en compte pour fournir une synth&egrave;se pond&eacute;r&eacute;e</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">revue de litt&eacute;rature conforme aux m&eacute;thodes d&#39;appr&eacute;ciation critique des &eacute;tudes cliniques</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Ces revues de litt&eacute;rature ne sont pas syst&eacute;matiques, mais sont conformes &agrave; certaines m&eacute;thodes d&#39;analyse qui visent &agrave; mesure l&#39;int&eacute;r&ecirc;t de chaque &eacute;tude clinique cit&eacute;e. Parmi ces m&eacute;thodes, on peut notamment citer <a href="https://casp-uk.net/casp-tools-checklists/" target="_blank">CASP</a> qui est tr&egrave;s utilis&eacute;e par les professionnels.</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etude clinique randomis&eacute;e</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Il ne s&#39;agit plus de revues de litt&eacute;rature prenant en compte plusieurs &eacute;tudes cliniques mais d&#39;une seule &eacute;tude. Cela dit, ce genre d&#39;&eacute;tude est randomis&eacute;e et en double-aveugle : les groupes de patients sont r&eacute;partis de mani&egrave;re al&eacute;atoire et les sujets ne savent pas s&#39;ils re&ccedil;oivent par exemple le traitement comparateur (ou un placebo) ou bien le traitement &eacute;valu&eacute; dans l&#39;&eacute;tude.</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etude clinique non randomis&eacute;e</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Au cours des essais contr&ocirc;l&eacute;s non-randomis&eacute;s, les participants sont affect&eacute;s &agrave; des groupes de traitement et de contr&ocirc;le par les investigateurs</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etude de cohorte</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">&quot;Une &eacute;tude de cohorte regroupe des sujets partageant ensemble un certain nombre de caract&eacute;ristiques, suivis dans le temps (longitudinalement), &agrave; l&rsquo;&eacute;chelle individuelle (par exemple les expos&eacute;s fument et les non-expos&eacute;s ne fument pas).&quot; (<a href="https://fr.wikipedia.org/wiki/%C3%89tude_de_cohorte" target="_blank">wikipedia</a>)</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etudes de s&eacute;ries de cas</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etude suivant des patients ayant pris un m&ecirc;me traitement ou bien partageant les m&ecirc;mes risques ou facteurs d&#39;exposition</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etude de cas</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Etude &eacute;crite &agrave; propos d&#39;un cas isol&eacute;</td>
+		</tr>
+		<tr>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Opinion du m&eacute;decin ou de l&#39;expert</td>
+			<td class="ck_border" style="border: 1px solid rgb(221, 221, 221);">Un m&eacute;decin qui lit la presse scientifique ou professionnelle et qui a l&#39;exp&eacute;rience du terrain a certainement une opinion tout &agrave; fait int&eacute;ressante dont il peut faire un &eacute;dito dans un journal comme Prescrire par exemple. Mais dans la pyramide de preuve, cette contribution n&#39;en reste pas moins au niveau le plus bas.</td>
+		</tr>
+	</tbody>
+</table>
+		   </div><div class="">
+                        <ul id="s-lg-link-list-36851103" class="s-lg-link-list s-lg-link-list-2"><li class="s-lg-tn-li clearfix">
+                        
+			<div id="s-lg-content-34379701" class=""><span><a href="https://app.klaxoon.com/join/XJTVX7B" target="_blank"  onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '2',_st_content_id: '34379701'});">
+                    <div id="s-lg-tn-34379701" class="s-lg-tn pad-right-sm">
+                                <img loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" height="40" alt="" class="pull-left margin-right-sm">
+                    </div>Activité : identifier statuts et types d'articles</a> 
+				</span>
+			</div></li>
+                        
+                            </ul>
+                            </div>
+			<div id="s-lg-content-34379702" class="  clearfix">
+				<p><strong>Premi&egrave;re activit&eacute;</strong> (statut de publication) Cat&eacute;goriser les documents dont les titres suivent selon leurs statuts (publication / preprint / article r&eacute;tract&eacute;) :</p>
+
+<ul>
+	<li><a href="https://www.medrxiv.org/content/10.1101/2020.11.26.20238451v1" target="_blank">Perceived Health Benefits of Using Non-Electrical Water Filters under &lsquo;Clean India Mission&rsquo; Programme in a Village of Bhopal</a></li>
+	<li><a href="https://www-sciencedirect-com.passerelle.univ-rennes1.fr/science/article/pii/S0048969720315746" target="_blank">Can nature-based solutions contribute to water security in Bhopal</a>?</li>
+	<li><a href="https://arxiv.org/abs/1105.3778" target="_blank">Oscillatory thermal instability - the Bhopal disaster and liquid bombs</a></li>
+	<li><a href="https://agris.fao.org/agris-search/search.do?recordID=US201800392450" target="_blank">Pesticide use in cereal production in Moghan Plain, Iran: Risk knowledge and farmers&rsquo; attitudes</a></li>
+</ul>
+
+<p><strong>Deuxi&egrave;me activit&eacute;</strong> : ordonnancer selon l&#39;ordre de la pyramide de la preuve les articles dont les titres suivent :</p>
+
+<ul>
+	<li><a href="https://pubmed-ncbi-nlm-nih-gov.passerelle.univ-rennes1.fr/28860733/" target="_blank">Recent developments in age-related macular degeneration</a></li>
+	<li><a href="https://pubmed-ncbi-nlm-nih-gov.passerelle.univ-rennes1.fr/25228121/" target="_blank">A clearer view of evidence in treating macular degeneration: off‐label policies and independent research</a></li>
+	<li><a href="https://pubmed-ncbi-nlm-nih-gov.passerelle.univ-rennes1.fr/31831274/" target="_blank">An acute macular neuroretinitis case</a></li>
+	<li><a href="https://www-cochranelibrary-com.passerelle.univ-rennes1.fr/cdsr/doi/10.1002/14651858.CD011977.pub2/full" target="_blank">Blue‐light filtering intraocular lenses (IOLs) for protecting macular health</a></li>
+</ul>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5070654" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Rechercher dans Pubmed</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18849618" class="s-lg-box-wrapper-18849618">
+					<div id="s-lg-box-15894640-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894640" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Ressources pour Pubmed
+                                </h2>
+							<div id="s-lg-box-collapse-15894640" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378063" class="  clearfix">
+				<p><a href="https://bibliotheques.univ-rennes1.fr/ressources?f%5B0%5D=resource_types_1%3A270"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/pubmed_Logo.png" style="width: 106px; height: 60px;" /> Se connecter &agrave; Pubmed &agrave; partir du site de la BU</a></p>
+
+<p><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/MeshBilingueLogo.png" style="width: 108px; height: 60px;" />&nbsp;<a href="https://mesh.inserm.fr/FrenchMesh/">Le Mesh bilingue / Inserm</a></p>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849619" class="s-lg-box-wrapper-18849619">
+					<div id="s-lg-box-15894641-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894641" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Mémo Pubmed
+                                </h2>
+							<div id="s-lg-box-collapse-15894641" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378064" class="  clearfix">
+				<p><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/memo-pubmed_49413316.png" /></p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849620" class="s-lg-box-wrapper-18849620">
+					<div id="s-lg-box-15894642-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894642" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Activité
+                                </h2>
+							<div id="s-lg-box-collapse-15894642" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378065" class="  clearfix">
+				<h5><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" style="width: 50px; height: 50px;" /> <strong>Activit&eacute; : <a href="https://app.klaxoon.com/join/XZCAMBW" target="_blank">rechercher des mots Mesh</a></strong></h5>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5070657" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Utiliser différents outils documentaires et en optimiser l'utilisation</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18849625" class="s-lg-box-wrapper-18849625">
+					<div id="s-lg-box-15894645-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894645" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Diagramme des recherches bibliographiques
+                                </h2>
+							<div id="s-lg-box-collapse-15894645" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378070" class="  clearfix">
+				<p>D&#39;apr&egrave;s les recommandations PRISMA 2020</p>
+
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5810635/">La publication du guide PRISMA</a></p>
+
+<p><a href="https://prisma-statement.org/">Le site PRISMA</a></p>
+
+<p><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/118492/images/Flow-chart__internes.JPG" /></p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849626" class="s-lg-box-wrapper-18849626">
+					<div id="s-lg-box-15894646-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894646" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Ressources principales
+                                </h2>
+							<div id="s-lg-box-collapse-15894646" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378071" class="  clearfix">
+				<h5><strong>En compl&eacute;ment de Pubmed, nous allons tester aujourd&#39;hui deux autres ressources</strong></h5>
+		   </div><div class="">
+                        <ul id="s-lg-link-list-36849796" class="s-lg-link-list s-lg-link-list-2"><li class="s-lg-tn-li clearfix">
+                        
+			<div id="s-lg-content-34378072" class=""><span><a href="https://bibliotheques.univ-rennes1.fr/ressources/google-scholar" target="_blank"  onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '2',_st_content_id: '34378072'});">
+                    <div id="s-lg-tn-34378072" class="s-lg-tn pad-right-sm">
+                                <img loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/google_scholar_mini.jpg" height="50" alt="" class="pull-left margin-right-sm">
+                    </div>Google Scholar</a> 
+				</span>
+			</div></li>
+                        <li class="s-lg-tn-li clearfix">
+                        
+			<div id="s-lg-content-34378073" class=""><span><a href="https://bibliotheques.univ-rennes1.fr/cairn" target="_blank"  onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '2',_st_content_id: '34378073'});">
+                    <div id="s-lg-tn-34378073" class="s-lg-tn pad-right-sm">
+                                <img loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/cairn_petit.png" height="70" alt="" class="pull-left margin-right-sm">
+                    </div>CAIRN</a> 
+				</span>
+			</div></li>
+                        
+                            </ul>
+                            </div>
+			<div id="s-lg-content-34378074" class="  clearfix">
+				<h5><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/checklist.png" style="width: 50px; height: 50px;" /> <strong>Activit&eacute; : point 3 du support distribu&eacute;</strong></h5>
+		   </div>
+			<div id="s-lg-content-34378075" class="  clearfix">
+				<h5><strong>Autres outils </strong></h5>
+
+<table class="table table-hover" height="270" width="792">
+	<tbody>
+		<tr>
+			<td class="ck_border">
+			<p><a href="https://bibliotheques.univ-rennes1.fr/ressources/bdsp-banque-de-donnees-sante-publique" target="_blank"><strong>Banque de donn&eacute;es Sant&eacute; publique</strong></a></p>
+			</td>
+			<td class="ck_border" style="width: 120px;"><a href="https://bibliotheques.univ-rennes1.fr/ressources/bdsp-banque-de-donnees-sante-publique" target="_blank"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/bdsp_retaille_petit.jpg" style="width: 110px; height: 68px; float: left;" /></a></td>
+			<td class="ck_border"><span class="tex2jax_process"></span>
+			<p><span class="tex2jax_process">La BDSP propose une base de donn&eacute;es bibliographiques (articles, rapports, m&eacute;moires, &eacute;tudes)</span></p>
+
+			<p><strong><span class="tex2jax_process">Acc&egrave;s gratuit et illimit&eacute; &agrave; la base bibliographique, sans garantie d&#39;acc&egrave;s au texte int&eacute;gral. </span></strong></p>
+			<span class="tex2jax_process"> </span>
+
+			<p><span class="tex2jax_process">P&eacute;riode couverte : 1973-2018.</span><span class="tex2jax_process"> A noter : la BDSP n&#39;est plus aliment&eacute;e &agrave; partir de f&eacute;vrier 2019.</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="ck_border"><strong><a href="https://bibliotheques.univ-rennes1.fr/ressources/cochrane-library" target="_blank">Cochrane library</a></strong></td>
+			<td class="ck_border"><a href="https://bibliotheques.univ-rennes1.fr/ressources/cochrane-library" target="_blank"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/cochrane_retaille_petit.jpg" style="width: 100px; height: 56px;" /></a></td>
+			<td class="ck_border">
+			<p><span class="tex2jax_process">Base de donn&eacute;es m&eacute;dicale, bibliographique et textuelle.<br />
+			&Eacute;tudes syst&eacute;matiques bas&eacute;es sur les r&eacute;sultats des traitements de type m&eacute;ta-analyse.</span></p>
+
+			<p><span class="tex2jax_process"></span></p>
+
+			<p><span class="tex2jax_process">La base de donn&eacute;es comporte 7 &eacute;l&eacute;ments :</span></p>
+			<span class="tex2jax_process"> </span>
+
+			<ul>
+				<li><span class="tex2jax_process">la <strong>base des revues syst&eacute;matiques Cochrane</strong> </span></li>
+				<li><span class="tex2jax_process"><strong>Cochrane Clinical Answers</strong> ;</span></li>
+				<li><span class="tex2jax_process">Le<strong> registre central Cochrane des essais contr&ocirc;l&eacute;s</strong></span></li>
+				<li><span class="tex2jax_process">la <strong>base des r&eacute;sum&eacute;s des revues des effets</strong></span></li>
+				<li><span class="tex2jax_process">Le <strong>registre m&eacute;thodologique Cochrane</strong></span></li>
+				<li><span class="tex2jax_process">La <strong>base d&#39;&eacute;valuation des technologies de la sant&eacute;</strong> </span></li>
+				<li><span class="tex2jax_process">La <strong>base d&#39;&eacute;valuation &eacute;conomique du NHS</strong></span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="ck_border"><strong><a href="https://bibliotheques.univ-rennes1.fr/ressources/embase" target="_blank">Embase</a></strong></td>
+			<td class="ck_border"><a href="https://bibliotheques.univ-rennes1.fr/ressources/embase" target="_blank"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/Embase_mini.png" style="width: 100px; height: 56px;" /></a></td>
+			<td class="ck_border"><span class="tex2jax_process">Embase est une <strong>base de donn&eacute;es bibliographiques</strong> internationale en <strong>sciences m&eacute;dicales</strong> <strong>et biom&eacute;dicales</strong> produite par la soci&eacute;t&eacute; Elsevier.<br />
+			Il est possible d&#39;y&nbsp;rechercher les r&eacute;f&eacute;rences d&#39;articles dont une partie parall&egrave;lement signal&eacute;e&nbsp;dans Pubmed et une partie en exclusivit&eacute;&nbsp;Embase.<br />
+			<br />
+			Les r&eacute;f&eacute;rences bibliographiques donnent&nbsp;acc&egrave;s aux <strong>articles en texte int&eacute;gral s&#39;ils sont&nbsp;inclus dans les abonnements</strong> de l&#39;Universit&eacute; de Rennes 1, ou disponibles en open access.</span></td>
+		</tr>
+		<tr>
+			<td class="ck_border"><a href="https://bibliotheques.univ-rennes1.fr/ressources/web-science" target="_blank"><strong>Web of Science</strong></a></td>
+			<td class="ck_border"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/WoS_mini.png" /></td>
+			<td class="ck_border"><span class="tex2jax_process"><span class="tex2jax_process"></span></span>
+			<p><span class="tex2jax_process">Web of Science est une <strong>base de donn&eacute;es bibliographiques pluridisciplinaire </strong>en langue anglaise. Une recherche vous permet de trouver &agrave; la fois <strong>des r&eacute;f&eacute;rences et des articles en texte int&eacute;gral</strong>.</span></p>
+			<span class="tex2jax_process"> </span>
+
+			<p><span class="tex2jax_process">Le Web of Science est aussi <strong>une base de donn&eacute;es citationnelles</strong> qui permet donc de mesurer l&#39;impact des articles via leur nombre de citations.</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="ck_border"><strong><a href="https://bibliotheques.univ-rennes1.fr/ressources/sciencedirect-elsevier" target="_blank">Science Direct</a></strong></td>
+			<td class="ck_border"><a href="https://bibliotheques.univ-rennes1.fr/ressources/sciencedirect-elsevier" target="_blank"><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/149664/images/sciencedirect_mini.jpg" /></a></td>
+			<td class="ck_border">
+			<p>Plateforme multidisciplinaire de revues et ebooks en texte int&eacute;gral.</p>
+
+			<p><span class="tex2jax_process"></span></p>
+
+			<p><span class="tex2jax_process">Vous avez partiellement acc&egrave;s aux contenus&nbsp;ScienceDirect. Sont inclus dans les abonnements et collections de l&#39;Universit&eacute; de Rennes 1 :</span></p>
+			<span class="tex2jax_process"> </span>
+
+			<ul>
+				<li><span class="tex2jax_process">Plus de 3000 <strong>revues en texte int&eacute;gral</strong> de l&#39;&eacute;diteur Elsevier dont 36% de titres en sant&eacute;.</span><span class="tex2jax_process"></span></li>
+				<li><span class="tex2jax_process">Les 55 revues de la <strong><a href="https://bibliotheques.univ-rennes1.fr/node/433">Biblioth&egrave;que M&eacute;dicale Fran&ccedil;aise</a> Elsevier-Masson</strong><strong>.</strong></span></li>
+				<li><span class="tex2jax_process">Les collections d&#39;<strong>ebooks Masson</strong> en sciences m&eacute;dicales et param&eacute;dicales <strong>parus entre 2015 et 2020</strong></span></li>
+				<li><span class="tex2jax_process">L&#39;<strong>Encyclopedia of the Human Brain</strong></span></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18849627" class="s-lg-box-wrapper-18849627">
+					<div id="s-lg-box-15894647-container" class="s-lib-box-container">
+						<div id="s-lg-box-15894647" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Optimiser votre utilisation des outils et le nombre de résultats d'une recherche
+                                </h2>
+							<div id="s-lg-box-collapse-15894647" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34378076" class="  clearfix">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/MdAgH9ikS2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		   </div>
+			<div id="s-lg-content-34378077" class="  clearfix">
+				<blockquote>
+<p><a href="https://infotrack.unige.ch/" target="_blank"><em><span style="font-size:12px;">Licence CC BY-NC-SA 4.0. 2016, Biblioth&egrave;que de l&#39;Universit&eacute; de Gen&egrave;ve</span></em></a></p>
+</blockquote>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5071117" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Deuxième séance : faire de la veille</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"></div></div></div>
+					<div id="s-lg-page-section-5071106" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Des outils, des usages</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18851552" class="s-lg-box-wrapper-18851552">
+					<div id="s-lg-box-15896122-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896122" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Objectifs de la deuxième séance
+                                </h2>
+							<div id="s-lg-box-collapse-15896122" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381397" class="  clearfix">
+				<p>- Identifier quelques outils documentaires, leur int&eacute;r&ecirc;t, leur accessibilit&eacute; &nbsp;<br />
+- ma&icirc;triser la recherche inverse d&#39;images &nbsp;<br />
+- Comprendre la d&eacute;marche de la veille et l&#39;int&eacute;r&ecirc;t d&#39;automatiser le processus &nbsp;<br />
+- utiliser les r&eacute;seaux sociaux pour faire de la veille &nbsp;<br />
+- utiliser un agr&eacute;gateur de flux RSS &nbsp;<br />
+- g&eacute;rer des flux RSS de mani&egrave;re experte &nbsp;<br />
+- Faire de la veille avec Pubmed</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18851505" class="s-lg-box-wrapper-18851505">
+					<div id="s-lg-box-15896080-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896080" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Description du matériel
+                                </h2>
+							<div id="s-lg-box-collapse-15896080" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381296" class="  clearfix">
+				<p>Avec le mat&eacute;riel list&eacute; ci-dessous :</p>
+
+<p>- 8 fiches vertes sur chacune un texte d&eacute;crivant l&#39;utilit&eacute; d&#39;un outil (le nom de l&#39;outil est absent de ce descriptif) &nbsp;<br />
+- 8 fiches jaunes sur chacune une URL &eacute;crit &agrave; la main ou un QR code imprim&eacute; (plus rapide &agrave; utiliser) &nbsp;<br />
+- 8 fiches roses sur chacune une ou des conditions pour acc&eacute;der &agrave; l&#39;information (authentifi&eacute;, accessible &agrave; tous, accessible depuis le campus, etc.) &nbsp;</p>
+
+<p>Reconstituez les triplets (service / lien / type d&#39;acc&egrave;s)</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5071107" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Recherche inverse d'image</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18851507" class="s-lg-box-wrapper-18851507">
+					<div id="s-lg-box-15896082-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896082" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Identifier une image
+                                </h2>
+							<div id="s-lg-box-collapse-15896082" >
+								<div class="s-lib-box-content">
+									<div class="">
+                        <ul id="s-lg-link-list-36852469" class="s-lg-link-list s-lg-link-list-4"><li class=" pad-bottom-sm">
+                        
+			<div id="s-lg-content-34381297" class="">
+				<span>
+					<a href="https://focus.univ-rennes1.fr/ld.php?content_id=34381297" rel="nofollow" target="_blank"
+					onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '5',_st_content_id: '34381297'});"><i class="s-lg-file-icon fa fa-file-image-o" style="font-size:1.5em; margin-right:5px;"></i>
+					</a>
+				</span><div id="s-lg-file-desc-34381297" class="s-lg-file-desc"><div id="s-lg-link-desc-34381297" class="s-lg-link-desc">Comment vous serait-il possible d'identifier l'image suivante : qui est sur la photo ? où se trouve t-on ? De quand date la photo ?  <br />
+<br />
+<br />
+Confirmer les informations sur l'image en faisant des recherches complémentaires <br />
+<br />
+trouver un autre site, de préférence crédible, qui met en relation la personne sur la photo et le nom trouvé.</div></div>
+			</div></li>
+                        
+                            </ul>
+                            </div>
+			<div id="s-lg-content-34381298" class="  clearfix">
+				
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5071108" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Faire de la veille sur les réseaux sociaux</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18851508" class="s-lg-box-wrapper-18851508">
+					<div id="s-lg-box-15896083-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896083" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Présence sur les réseaux sociaux
+                                </h2>
+							<div id="s-lg-box-collapse-15896083" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381300" class="  clearfix">
+				<p><strong>Quelle pr&eacute;sence de la personne de la photo sur Twitter : cette personne a t-elle un compte personnel ? Son institution a t-elle un compte ?</strong></p>
+
+<p>Sur quel r&eacute;seau social chercher &agrave; suivre une personne ? Cela d&eacute;pend de l&#39;occupation de la personne.</p>
+
+<p>- Twitter : hommes et femmes politique, chercheurs, journalistes, professionnels de l&#39;information, militants. Profils tr&egrave;s majoritairement ouverts<br />
+- Facebook : Les personnes arriv&eacute;es sur Facebook entre 2015 et aujourd&#39;hui ont souvent fait fuir les plus jeunes ou les plus geeks vers d&#39;autres r&eacute;seaux. Facebook a d&#39;abord attir&eacute; des ados et de jeunes adultes, aujourd&#39;hui, on va plus facilement trouver leurs parents.<br />
+- Instagram : influenceurs, photographes, artistes, mais aussi toute une partie du grand public qui pr&eacute;f&egrave;re Instagram &agrave; Twitter rebut&eacute; par la violence des &eacute;changes sur le r&eacute;seau de l&#39;oiseau bleu. Profils tant&ocirc;t ouverts, tant&ocirc;t priv&eacute;s<br />
+- ResearchGate : chercheurs (au d&eacute;part en sciences exactes, mais de plus en plus de chercheurs en Sciences Humaines rebut&eacute;s par le mod&egrave;le &eacute;conomique d&#39;Academia.edu ont tendance &agrave; s&#39;y retrouver)</p>
+
+<p>On peut librement chercher des profils dans Twitter (https://www.twitter.com) sans avoir de compte.<br />
+En revanche, Instagram vous force la main pour obtenir des informations sur ses abonn&eacute;s : il faut que vous fassiez vous-m&ecirc;me partie des abonn&eacute;s. Il existe une alternative pour sonder Instagram sans se cr&eacute;er de compte : le site Dumpor (https://dumpor.com) qui donne acc&egrave;s aux comptes publics sur Instagram. Evidemment, pour suivre ce qu&#39;&eacute;crivent ces abonn&eacute;s au r&eacute;seau, il vous faudra vous y abonner vous-m&ecirc;me.</p>
+
+<p><strong>Y a t-il quelque chose sur Instagram, pour ce que vous pouvez en voir- qui concerne la clinique en question ?</strong></p>
+
+<p>Supposons que vous soyez un chercheur dans le domaine du folklore. <strong>Quel compte Twitter vous semble le plus int&eacute;ressant &agrave; suivre sur le folklore relatif au Yeti ?</strong></p>
+
+<p>- @adgpi &nbsp;<br />
+- @oliveratlantis<br />
+- @HLizanne &nbsp;<br />
+- @YetiNation10&nbsp;</p>
+
+<p>&nbsp;</p>
+
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5071110" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Faire de la veille avec des flux RSS</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18851529" class="s-lg-box-wrapper-18851529">
+					<div id="s-lg-box-15896100-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896100" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Qu'est-ce que le RSS ?
+                                </h2>
+							<div id="s-lg-box-collapse-15896100" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381367" class="  clearfix">
+				<p>Le RSS donne la possibilit&eacute; d&#39;<strong>automatiser la collecte de renseignements</strong>.<br />
+flux = fichier en xml qui permet d&#39;envoyer de l&#39;information qui para&icirc;t sur une page ou un site vers une autre page (agr&eacute;gateur de flux)<br />
+RSS : premier protocole pour la mise en oeuvre de cette fonctionnalit&eacute; (il y a aussi atom). RSS est devenu en quelque sorte g&eacute;n&eacute;rique : un flux RSS (Really Simple Syndication) d&eacute;signe &agrave; la fois les flux RSS, les flux Atom et les autres fichiers de ce type.<br />
+Assez-souvent une <a href="https://www.google.com/search?tbm=isch&amp;q=RSS&amp;tbs=imgo:1" target="_blank">icone orange</a> permet de faciliter la capture d&#39;un flux.</p>
+
+<p><img alt="" loading="lazy" src="https://libapps-eu.s3.amazonaws.com/accounts/112982/images/icone.png" style="float: left; width: 60px; height: 60px;" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Le RSS est un protocole aussi massif qu&#39;il est invisible</strong> : tous les abonnements aux podcasts fonctionnent au moyen de ce protocole.<br />
+Une grande partie des sites, con&ccedil;us avec Wordpress, disposent d&#39;un flux RSS par d&eacute;faut qui n&#39;est pas forc&eacute;ment visible sur la page d&#39;accueil du site (pas d&#39;icone)</p>
+
+<p>Le RSS permet une syndication (=abonnement) **loyale**, au sens o&ugrave; toutes les nouveaut&eacute;s du site vous parviennent. Il n&#39;y a pas de tri op&eacute;r&eacute; en amont par un algorithme qui vous sert uniquement ce qu&#39;il estime plus pertinent pour vous (Sur les r&eacute;seaux sociaux, vous ne voyez plus forc&eacute;ment tous les nouveaux posts des personnes que vous suivez).<br />
+Compar&eacute; &agrave; la newsletter ou &agrave; l&#39;usage du mail, le RSS a l&#39;avantage de ne laisser aucune donn&eacute;e personnelle &agrave; une plateforme. La plupart des r&eacute;seaux sociaux sont gourmands en donn&eacute;es personnelles (mails, centres d&#39;int&eacute;r&ecirc;ts) que leurs ing&eacute;nieurs convertissent en profils publicitaires. Le RSS ne participe pas de cette logique, il est compr&eacute;hensible que la plupart de ces plateformes ne proposent pas de flux et qu&#39;ils faillent trouver des solutions de contournement.</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18851530" class="s-lg-box-wrapper-18851530">
+					<div id="s-lg-box-15896101-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896101" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Quel agrégateur utiliser ?
+                                </h2>
+							<div id="s-lg-box-collapse-15896101" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381368" class="  clearfix">
+				<p><a href="https://nodetics.com/feedbro/" target="_blank">Feedbro</a> (si on ne change pas souvent de machine et de navigateur)<br />
+<a href="https://feedly.com/" target="_blank">Feedly</a> (si on pr&eacute;f&egrave;re le cloud)</p>
+
+<p>pour repr&eacute;rer un flux dans un site d&eacute;pourvu d&#39;icone, t&eacute;l&eacute;charger l&#39;URL du site ou dans Feedbro, cliquer sur le lien &quot;find feeds in open tab&quot;</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18851531" class="s-lg-box-wrapper-18851531">
+					<div id="s-lg-box-15896102-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896102" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Gestion avancée des flux RSS
+                                </h2>
+							<div id="s-lg-box-collapse-15896102" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381379" class="  clearfix">
+				<ul>
+	<li>Possibilit&eacute; de construire un flux RSS &agrave; partir d&#39;une page avec <a href="https://feed43.com/" target="_blank">Feed43</a> (voir un exemple sur Youtube <a href="https://youtu.be/DcEbjeMciOQ" target="_blank">en ligne</a>.</li>
+	<li>Possibilit&eacute; de filtrer un flux avec <a href="http://pipes.digital/" target="_blank">Pipes Digital</a>. Voir par exemple <a href="https://www.pipes.digital/pipe/MOQ7k19e" target="_blank">ce flux</a> qui ajoute un filtre &quot;num&eacute;rique&quot; appliqu&eacute; sur le flux RSS de la rubrique Sant&eacute; du site Lemonde.fr</li>
+	<li>Possibilit&eacute; de convertir un compte Twitter en flux RSS. Utiliser pour ce faire le site <a href="https://nitter.fdn.fr" target="_blank">Nitter (instance FDN)</a>. Ce service permettra de sauvegarder un flux RSS en lien avec sa recherche sur Twitter</li>
+</ul>
+
+<p>chercher dans Nitter @theotherclinic et cliquer dans Feedbro (Find Feeds in Current tab)</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div><div id="s-lg-box-wrapper-18851535" class="s-lg-box-wrapper-18851535">
+					<div id="s-lg-box-15896105-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896105" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">A vous de jouer
+                                </h2>
+							<div id="s-lg-box-collapse-15896105" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381388" class="  clearfix">
+				<p>Les activit&eacute;s ci-dessous sont d&#39;une difficult&eacute; croissante. N&#39;h&eacute;sitez pas &agrave; solliciter l&#39;aide des formateurs.</p>
+
+<p><strong>exercice 1 : importer des flux </strong></p>
+
+<p>Importer dans votre agr&eacute;gateur les flux provenant des sites suivants :<br />
+- Site du R&eacute;seau Sentinelles &nbsp;<br />
+- Actualit&eacute;s du site Sant&eacute; Publique France sur le th&egrave;me de l&#39;alcool &nbsp;</p>
+
+<p><strong>exercice 2 : filtrer des flux</strong><br />
+- faire un filtre au flux RSS du site Lib&eacute;ration.fr en filtrant avec le mot &quot;ukraine&quot;<br />
+- faire un flux RSS &agrave; partir des essais cliniques publi&eacute;s sur le site <a href="http://biorxiv.org/" target="_blank">Biorxiv</a> portant sur la d&eacute;pression.</p>
+
+<p><strong>exercice 3 : construire des flux</strong></p>
+
+<p>Construire un flux avec Feed43 pour le <a href="https://etudiant.univ-rennes1.fr" target="_blank">portail &eacute;tudiant de Rennes 1</a>ou pour la page des appels &agrave; projet du site de l&#39;ARS</p>
+
+<p>&nbsp;</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>
+					<div id="s-lg-page-section-5071114" class="s-lg-page-section clearfix">
+						<h4 class="pull-left">Faire de la veille avec Pubmed</h4>
+					</div><div class="row s-lg-row"><div id="s-lg-col-1" class="col-md-12"><div class="s-lg-col-boxes"><div id="s-lg-box-wrapper-18851542" class="s-lg-box-wrapper-18851542">
+					<div id="s-lg-box-15896112-container" class="s-lib-box-container">
+						<div id="s-lg-box-15896112" class="s-lib-box s-lib-box-std">
+							<h2 class="s-lib-box-title">Evaluation des soins pour les personnes transgenres
+                                </h2>
+							<div id="s-lg-box-collapse-15896112" >
+								<div class="s-lib-box-content">
+									
+			<div id="s-lg-content-34381391" class="  clearfix">
+				<p>A partir de ce que vous avez vu dans la premi&egrave;re s&eacute;ance.<br />
+Faites une requ&ecirc;te pour obtenir des r&eacute;sultats sur l&#39;<strong>&eacute;valuation des soins apport&eacute;s aux personnes transgenres</strong>.</p>
+
+<p>Trouver des requ&ecirc;tes qui g&eacute;n&egrave;rent un nombre compris entre 50 et 10 r&eacute;sultats (possibilit&eacute; de mixer des <a href="https://www-ncbi-nlm-nih-gov.passerelle.univ-rennes1.fr/" target="_blank">mots MESH</a> et des mots du langage naturel)</p>
+
+<p>Sauvegardez dans Feedbro (ou Feedly) le flux issu de la requ&ecirc;te.</p>
+		   </div>
+								</div>
+								
+							</div>
+						</div>
+					</div></div></div></div></div>                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+<!-- BEGIN: Page Footer -->
+<div id="s-lib-footer-public"
+     class="s-lib-footer footer container s-lib-side-borders">
+    <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
+        <ul id="s-lg-guide-header-attributes" class="">
+            <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
+                <span class="s-lg-guide-label">Dernière mise à jour:</span> <span class="s-lg-text-greyout">Sep 13, 2022 10:09 AM</span>            </li>
+            <li id="s-lg-guide-header-url" class="s-lg-h-separator">
+                <span class="s-lg-guide-label">URL:</span> <span class="s-lg-text-greyout">https://focus.univ-rennes1.fr/MEQS_2022</span>            </li>
+            <li id="s-lg-guide-print-url">
+                <a href="javascript: window.print();"><i class="fa fa-print" aria-hidden="true" title="Imprimer la page"></i> Imprimer la page</a>            </li>
+        </ul>
+        <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
+            <a href="https://univ-rennes1.libapps.com/libapps/login.php?site_id=8822&target64=L2xpYmd1aWRlcy9hZG1pbl9jLnBocD9nPTcwNDM3OSZwPTUwNzExMTY=">Se connecter à LibApps</a>        </div>
+    </div>
+    <div class="pad-bottom-sm clearfix">
+        <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
+            <a href="mailto:damien.belveze@univ-rennes1.fr">Report a problem</a>        </div>
+        <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
+                    </div>
+        <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
+                    </div>
+    </div>
+</div>
+<!-- END: Page Footer -->
+<!-- scroll_top.twig -->
+<div id="s-lib-scroll-top">
+    <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Retour au Sommet"
+       aria-label="Retour au Sommet">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+        </span>
+    </a>
+</div>
+<!-- !scroll_top.twig -->
+<div id="s-lib-alert" title=""><div id="s-lib-alert-content"></div></div>
+                <!-- BEGIN: Custom Footer -->
+                
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+		<!-- END: Custom Footer -->
+</body>
+</html>
