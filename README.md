@@ -26,4 +26,6 @@ La séance présentée ici est la deuxième (veille)
 - utiliser les réseaux sociaux pour faire de la veille  
 - utiliser un agrégateur de flux RSS  
 - gérer des flux RSS de manière experte  
-- Faire de la veille avec Pubmed  
+- Faire de la veille avec Pubmed 
+
+![](images/triplets.jpg)
